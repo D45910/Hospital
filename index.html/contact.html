@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Полтавська обласна лікарня</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+    * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        background: url('https://uprostim.com/wp-content/uploads/2021/04/image042-48-scaled.jpg') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 32, 64, 0.6);
+        z-index: -1;
+    }
+
+    header {
+      background-color: rgba(0, 85, 164, 0.85);
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .logo-img {
+      height: 100px;
+      width: auto;
+      margin-right: 1rem;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-info h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+      color: #ffeecc;
+    }
+
+    .contact-info p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .map {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .icons{
+      vertical-align: middle;
+      width: 30px;
+      margin-right: 8px;
+    }
+
+    .icons-footer{
+      vertical-align: middle;
+      width: 18px;
+      margin-bottom: 5px;        
+    }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-socials a img {
+  width: 35px;
+  height: 35px;
+  margin-left: 16px;
+  transition: transform 0.3s ease;
+}
+
+.footer-socials a img:hover {
+  transform: scale(1.2);
+}
+
+
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+        background-color: rgba(0, 32, 64, 0.85);
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        margin-top: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .map iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="logo.png" alt="Лого" class="logo-img">
+    <div class="logo">Полтавська обласна лікарня</div>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="about_us.html">Про нас</a>
+        <a href="#">Послуги</a>
+        <a href="#">Команда</a>
+        <a href="contact.html">Контакти</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="contact-container">
+    <div class="contact-info">
+        <h2>Контакти</h2>
+
+        <p>
+          <img src="icons/marker.svg" alt="Адреса" class="icons">
+          м. Полтава, вул. Шевченка, 23
+        </p>
+      
+        <p>
+          <img src="icons/call.svg" alt="Телефон" class="icons">
+          (0532) 60-84-24
+        </p>
+      
+        <p>
+          <img src="icons/mail.svg" alt="Email" class="icons">
+          info@okl.poltava.ua
+        </p>
+      
+        <p><strong>Графік роботи:</strong><br>
+          Пн–Пт: 8:00–17:00<br>
+          Сб–Нд: Вихідні
+        </p>
+    </div>
+
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2615.293828416375!2d34.5537046!3d49.5826811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f5d9ecf6359%3A0xef5937df706dd61c!2z0J_QvtC00YDQtdC30L3QtdGB0YzQutCwINCh0LXQvdCw0YDRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCb0YzQstC10YDQvdCwINGD0Lsu!5e0!3m2!1suk!2sua!4v1715536443890!5m2!1suk!2sua"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="footer-content">
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/pokl.sklif" target="_blank">
+        <img src="icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/explore/locations/710058996006970/" target="_blank">
+        <img src="icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://t.me/pokl_sklif" target="_blank">
+        <img src="icons/telegram.svg" alt="Telegram">
+      </a>
+    </div>
+    </div>
+    <p>© 2025 Полтавська обласна лікарня. Всі права захищено.</p>
+    <p> <img src="icons/marker.svg" alt="Адреса" class="icons-footer"> Полтава, вул. Шевченка, 23 | <img src="icons/call.svg" alt="Телефон" class="icons-footer"> (0532) 60-84-24</p>
+  </footer>
+
+</body>
+
+</html>

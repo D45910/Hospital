@@ -150,6 +150,30 @@
             margin-right: 1rem;
         }
 
+        .icons-footer{
+          vertical-align: middle;
+          width: 18px;
+          margin-bottom: 5px;        
+        }
+
+        .footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        
+        .footer-socials a img {
+          width: 35px;
+          height: 35px;
+          margin-left: 16px;
+          transition: transform 0.3s ease;
+        }
+        
+        .footer-socials a img:hover {
+          transform: scale(1.2);
+        }
+
         footer {
             background-color: rgba(0, 32, 64, 0.85);
             color: white;
@@ -208,7 +232,7 @@
             <a href="about_us.html">Про нас</a>
             <a href="#">Послуги</a>
             <a href="#">Команда</a>
-            <a href="#">Контакти</a>
+            <a href="contact.html">Контакти</a>
         </nav>
     </header>
 
@@ -250,10 +274,23 @@
     </section>
 
     <!-- ПІДВАЛ -->
-    <footer>
-        <p>© 2025 Полтавська обласна лікарня. Всі права захищено.</p>
-        <p>Полтава, вул. Шевченка, 23 | Тел: (0800) 50-52-01</p>
-    </footer>
+  <footer>
+  <div class="footer-content">
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/pokl.sklif" target="_blank">
+        <img src="icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/explore/locations/710058996006970/" target="_blank">
+        <img src="icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://t.me/pokl_sklif" target="_blank">
+        <img src="icons/telegram.svg" alt="Telegram">
+      </a>
+    </div>
+    </div>
+    <p>© 2025 Полтавська обласна лікарня. Всі права захищено.</p>
+    <p> <img src="icons/marker.svg" alt="Адреса" class="icons-footer"> Полтава, вул. Шевченка, 23 | <img src="icons/call.svg" alt="Телефон" class="icons-footer"> (0532) 60-84-24</p>
+  </footer>
 
 </body>
 
