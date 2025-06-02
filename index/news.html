@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новини — Антара</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('https://uprostim.com/wp-content/uploads/2021/04/image042-48-scaled.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: white;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    header {
+      background-color: rgba(0, 85, 164, 0.85);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #ffffff;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .news-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+      height: 500px;
+      width: 400px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .news-item:hover {
+      transform: scale(1.02);
+    }
+
+    .news-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      background-color: #222;
+    }
+
+    .news-content {
+      padding: 1rem;
+    }
+
+    .news-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+
+    .news-date {
+      font-size: 0.85rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+
+    .icons-footer{
+          vertical-align: middle;
+          width: 18px;
+          margin-bottom: 5px;        
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .footer-socials a img {
+        width: 35px;
+        height: 35px;
+        margin-left: 16px;
+        transition: transform 0.3s ease;
+      }
+      .footer-socials a img:hover {
+        transform: scale(1.2);
+      }
+
+    footer {
+      background-color: rgba(0, 32, 64, 0.85);
+      text-align: center;
+      color: white;
+      padding: 2rem;
+      margin-top: 3rem;
+      animation: fadeInUp 1.5s ease both;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <img src="logo.png" alt="Лого" class="logo-img">
+    <div class="logo">Полтавська обласна лікарня</div>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="about_us.html">Про нас</a>
+      <a href="services.html">Послуги</a>
+      <a href="news.html">Новини</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+  </header>
+
+<main>
+  <div class="news-grid">
+    <div class="news-item">
+      <img src="https://cdn.royalcanin-weshare-online.io/9VdghowBBKJuub5qvxab/v3/female-veterinarian-using-stethoscope-on-kitten-16-9?w=1440&fm=jpg&auto=format%2Ccompress" class="news-img" alt="Новина 1" />
+      <div class="news-content">
+        <a href="cats.html">
+        <div class="news-title" style="color: pink;">Відкрито нове ветеренарне відділення</div>
+        </a>
+        <div class="news-date">25/05/2025</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <a href="cockroach.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsAfwHmJQqog0P2jkz4GC1ov-bJcauSUmpzQ&s" class="news-img" alt="Новина 2" />
+      </a>
+      <div class="news-content">
+        <div class="news-title" style="color: #ffcc00;">Епідемія тарганів!</div>
+        <div class="news-date">22/05/2025</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <img src="https://th.bing.com/th/id/OIP.TN3XxqUpWoYsH1G0EIqOhAHaIb?r=0&rs=1&pid=ImgDetMain" class="news-img" alt="Новина 3" />
+      <div class="news-content">
+        <div class="news-title"></div>
+        <div class="news-date"></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <img src="https://scontent.fudj4-1.fna.fbcdn.net/v/t39.30808-6/494569815_1221248510004999_6889676319301532549_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=geCTDcXnYvUQ7kNvwHOvvQl&_nc_oc=AdnWLSFSF7kirOQO1VIKsyHZAKy8LSaLwY_IIVVwa_A6OzOK8GWmTY5ib7dr2hvZhUo&_nc_zt=23&_nc_ht=scontent.fudj4-1.fna&_nc_gid=55GmBky69Rh0x_fmAOHkQQ&oh=00_AfKqiprGiHBlu5nbq5VmL08c6Rxcvb15bqE9Km9TRmlH-g&oe=68439794" class="news-img" alt="Новина 4" />
+      <div class="news-content">
+        <div class="news-title">Оновлення обладнання у клініці</div>
+        <div class="news-date">20/05/2025</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <img src="http://okl.poltava.ua/files/2015/06/kdl21-1024x768.jpg" class="news-img" alt="Новина 5" />
+      <div class="news-content">
+        <div class="news-title">Відкрито лабораторне відділення</div>
+        <div class="news-date">18/05/2025</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <img src="https://scontent.fudj4-1.fna.fbcdn.net/v/t39.30808-6/495388418_1227161236080393_5094675298124262746_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=bd9l4rtqHfUQ7kNvwFQ0fw5&_nc_oc=AdlCCcNGuFn9UanJK3_Eq0lY6sDkSHNAuyU7Xg48OZH_dubsJt6iCWK7CJs9NoGTYrI&_nc_zt=23&_nc_ht=scontent.fudj4-1.fna&_nc_gid=isHQBtDccaTcvIlaNBCnmQ&oh=00_AfJ2j58YbTAse7eu12p1bomsSF-Q9G5y9iPWz1CQ61QZUA&oe=6843A03B" class="news-img" alt="Новина 6" />
+      <div class="news-content">
+        <div class="news-title">Представлено нову форму для персоналу</div>
+        <div class="news-date">17/05/2025</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/pokl.sklif" target="_blank">
+        <img src="icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/explore/locations/710058996006970/" target="_blank">
+        <img src="icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://t.me/pokl_sklif" target="_blank">
+        <img src="icons/telegram.svg" alt="Telegram">
+      </a>
+    </div>
+    </div>
+    <p>© 2025 Полтавська обласна лікарня. Всі права захищено.</p>
+    <p> <img src="icons/marker.svg" alt="Адреса" class="icons-footer"> Полтава, вул. Шевченка, 23 | <img src="icons/call.svg" alt="Телефон" class="icons-footer"> (0532) 60-84-24</p>
+  </footer>
+</body>
+</html>

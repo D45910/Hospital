@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Послуги — Полтавська обласна лікарня</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://uprostim.com/wp-content/uploads/2021/04/image042-48-scaled.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 32, 64, 0.6);
+      z-index: -1;
+    }
+
+    header {
+      background-color: rgba(0, 85, 164, 0.85);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-img {
+      height: 100px;
+      width: auto;
+      margin-right: 1rem;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    main {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #ffeecc;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      color: #f0f0f0;
+    }
+
+    footer {
+      background-color: rgba(0, 32, 64, 0.85);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .footer-socials a img {
+      width: 35px;
+      height: 35px;
+      margin-left: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .footer-socials a img:hover {
+      transform: scale(1.2);
+    }
+
+    .icons-footer {
+      vertical-align: middle;
+      width: 18px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Лого" class="logo-img">
+    <div class="logo">Полтавська обласна лікарня</div>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="about_us.html">Про нас</a>
+      <a href="services.html">Послуги</a>
+      <a href="news.html">Новини</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Наші послуги</h1>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Кардіологія</h3>
+        <p>Сучасне обладнання для здоров'я серця.</p>
+      </div>
+      <div class="service-card">
+        <h3>Хірургія</h3>
+        <p>Мінімально інвазивні технології для найкращого результату.</p>
+      </div>
+      <div class="service-card">
+        <h3>Педіатрія</h3>
+        <p>Комплексна допомога дітям усіх вікових груп.</p>
+      </div>
+      <div class="service-card">
+        <h3>Лабораторія</h3>
+        <p>Точна діагностика та швидке отримання результатів.</p>
+      </div>
+      <div class="service-card">
+        <h3>Неврологія</h3>
+        <p>Діагностика та лікування захворювань нервової системи.</p>
+      </div>
+      <div class="service-card">
+        <h3>Терапія</h3>
+        <p>Індивідуальний підхід до кожного пацієнта.</p>
+      </div>
+      <div class="service-card">
+        <h3 style="color: #ffcc00;">Відділення дезінфекції проти тарганів</h3>
+        <p>Ефективна боротьба з тарганами — чистота та безпека вашого середовища.</p>
+      </div>
+      <div class="service-card">
+        <h3 style="color: pink;">Ветеринарна клініка</h3>
+        <p>Професійна допомога для домашніх тварин: лікування, вакцинація та догляд.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/pokl.sklif" target="_blank">
+        <img src="icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/explore/locations/710058996006970/" target="_blank">
+        <img src="icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://t.me/pokl_sklif" target="_blank">
+        <img src="icons/telegram.svg" alt="Telegram">
+      </a>
+    </div>
+    <p>© 2025 Полтавська обласна лікарня. Всі права захищено.</p>
+    <p><img src="icons/marker.svg" alt="Адреса" class="icons-footer"> Полтава, вул. Шевченка, 23 | <img src="icons/call.svg" alt="Телефон" class="icons-footer"> (0532) 60-84-24</p>
+  </footer>
+</body>
+
+</html>
